@@ -1,0 +1,399 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+
+nav{
+height: 80px;
+
+
+}
+
+body{
+    
+    width: 100%;
+    height: 100vh;
+    background: url("BackgroundCow.svg")center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+nav img{
+    
+    width: 300px;
+    position:relative;
+    margin-left: 9rem;
+    top: 17px;
+    
+}
+
+.container{
+ padding: 4rem 4rem 4rem 4rem;
+    
+    
+    
+    
+}
+
+header{
+padding-bottom:20rem;
+
+}
+
+
+.textbox{
+    height: auto;
+    margin: auto;
+  
+    max-width: 50rem;
+    min-width: auto;
+
+   
+}
+
+.textbox h3{
+    font-family: 'Francois One', sans-serif;
+    font-size: 15px;
+    color: #5B8EAF;
+text-align: center;
+    
+
+}
+
+.textbox h1{
+    color: #5B8EAF;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Francois One', sans-serif;
+    line-height: 3.2rem;
+    padding-bottom: 1rem; 
+}
+
+
+
+.saldo-grid{
+    width: 30rem;
+    margin-top: 1rem;
+    display: flex;
+    margin: auto;
+    
+}
+
+.saldo-grid-item{
+    
+    
+    
+}
+.saldo-grid-item h2{
+    
+    color: aliceblue;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    font-family: Neucha;
+}
+
+.saldo-grid-item input{
+    width: 100%;
+    background-color: #F0EFEF;
+    height: 2.7rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+ 
+}
+
+.item-one{
+  width: 20rem;  
+    
+    
+}
+
+.item-two{
+    width: 12rem;
+    
+    padding-left: 1rem;
+    
+}
+
+
+
+    
+  
+.btn{
+    background-color: #93C7E8;
+    border: none;
+    color: white;
+    padding: 8px 25px;
+    border-radius: 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color .5s;
+    font-family: 'Francois One', sans-serif;
+    
+}
+.btn:hover{
+    background-color: #707070;
+    
+}
+
+
+
+
+.datablock{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    
+}
+
+.blockOne{
+    text-align: center;
+    width: 20rem;
+    
+}
+
+.blockTwo{
+    
+    text-align: center;
+    width: 20rem;
+}
+
+.blockThree{
+    
+   text-align: center;
+    width: 20rem;
+}
+
+.blockfour{
+  
+    text-align: center;
+    width: 20rem;
+}
+
+
+
+.imageOne{
+    
+    margin: auto;
+    height: 100px;
+    
+    margin-bottom: 2rem;
+}
+
+.imageTwo{
+    
+    height: 100px;
+    margin: auto;
+    
+    margin-bottom: 2rem;
+}
+
+.imageThree{
+    
+    height: 100px;
+    
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+
+.imageFour{
+    
+    height: 100px;
+    margin: auto;
+    
+    margin-bottom: 2rem;
+}
+
+.cowimage{
+    height: 200px;
+    margin: auto;
+    width: 200px;
+    
+    
+}
+
+
+.hide {
+ font-family: 'Francois One', sans-serif;
+    color: #5B8EAF;
+    margin-left: -160px;
+    transform: skewY(-20deg);
+    margin-top: -220px;
+    display: none;
+}
+
+.hideTwo {
+ font-family: 'Francois One', sans-serif;
+    color: #5B8EAF;
+    margin-right: -160px;
+     margin-top: -220px;
+    transform: skewY(20deg);
+    display: none;
+}
+     
+.cowimage:hover + .hide{
+  display:block;
+}
+
+.cowimage:hover + .hideTwo{
+  display:block;
+}
+
+.amountMilk{
+     height: auto;
+    margin: auto;
+  margin-top: -2rem;
+    max-width: 60rem;
+    min-width: auto;
+    padding-bottom: 2rem;
+}
+
+.amountMilk h3{
+    font-family: 'Francois One', sans-serif;
+    font-size: 15px;
+    color: #5B8EAF;
+text-align: center;
+}
+
+.blockOne h4{
+    font-family: 'Francois One', sans-serif;
+    font-size: 10px;
+    color: #5B8EAF;
+text-align: center;
+     padding-bottom: 10px;
+}
+
+.blockTwo h4{
+    font-family: 'Francois One', sans-serif;
+    font-size: 10px;
+    color: #5B8EAF;
+text-align: center;
+     padding-bottom: 10px;
+}
+
+.blockThree h4{
+    font-family: 'Francois One', sans-serif;
+    font-size: 10px;
+    color: #5B8EAF;
+text-align: center;
+     padding-bottom: 10px;
+}
+
+.blockfour h4{
+    font-family: 'Francois One', sans-serif;
+    font-size: 10px;
+    color: #5B8EAF;
+text-align: center;
+    padding-bottom: 10px;
+}
+
+
+
+.blockOne h2{
+    font-family: 'Francois One', sans-serif;
+    font-size: 15px;
+    color: #5B8EAF;
+text-align: center;
+}
+
+.blockTwo h2{
+    font-family: 'Francois One', sans-serif;
+    font-size: 15px;
+    color: #5B8EAF;
+text-align: center;
+}
+
+.blockThree h2{
+    font-family: 'Francois One', sans-serif;
+    font-size: 15px;
+    color: #5B8EAF;
+text-align: center;
+}
+
+.blockfour h2{
+    font-family: 'Francois One', sans-serif;
+    font-size: 15px;
+    color: #5B8EAF;
+text-align: center;
+}
+
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: 'Francois One', sans-serif;
+    width: 100%;
+    background-color: #F0EFEF;
+    height: 2.7rem;
+    border-radius: 2rem;
+    font-size: .9rem;
+    cursor: pointer;
+    text-align: center;
+     
+    
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 18px;
+  right: 15px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #5B8EAF transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #5B8EAF transparent;
+  top: 8px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #5B8EAF;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #F0EFEF;
+  margin-top: 1px;
+  left: 0;
+  right: 0;
+  z-index: 9;
+    border-radius: 1rem;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
