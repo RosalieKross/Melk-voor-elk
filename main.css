@@ -265,6 +265,22 @@ text-align: center;
 text-align: center;
 }
 
+.plantbutton{
+    margin-top: 1rem;
+     display: flex;
+  justify-content: center;
+    margin-bottom: -2rem;
+
+}
+
+.hidethis{
+    margin-top: 2rem;
+}
+
+.green{
+    background-color: #839B82;
+}
+
 .blockOne h4{
     font-family: 'Francois One', sans-serif;
     font-size: 10px;
@@ -397,3 +413,4 @@ text-align: center;
 .select-items div:hover, .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
 }
+
