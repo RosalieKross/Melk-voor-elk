@@ -49,7 +49,7 @@ melk gebruik op het milieu heeft ! </h1>
                         </div>
 
                      <div class="saldo-grid-item item-two">
-                 <button class="btn" type="submit" name="search" >Bereken</button>
+                 <button class="btn" type="submit" name="search" onclick="myFunction(), myFunctionTwo()">Bereken</button>
                         </div>
                  
                     
@@ -92,10 +92,14 @@ if(isset($_POST['search']))
     <div class="amountMilk">
                      <h3> Om <?php echo $row ['id']; ?> liter melk te produceren is er het volgende nodig:
                     </h3>
-                    
-                    </div>
+        <div class="plantbutton">
+                <button class="btn green" onclick="myFunction(), myFunctionTwo()">Plantaardige variant</button>
+            </div>
+        </div>
+     
+        
     
-    <section class="datacontent">
+    <section class="datacontent" id="myDIV">
     
     <div class="datablock">
         
@@ -150,6 +154,64 @@ if(isset($_POST['search']))
             <div class="imageFour">
             <img alt="Image" style="height: 100px;" src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['image']); ?>" />
             </div>
+                </div>
+            <div class="cowimage">
+                <img src="Koetjes-03.png" style="width: 200px;">
+            </div>
+            <div class="hideTwo">No way!</div>
+            
+        </div>
+        
+        
+        </div>
+    
+    
+    </section>
+    
+    
+    <section class="datacontent hidethis" id="myDIVTwo" style="display:none">
+    
+    <div class="datablock">
+        
+        <div class="blockOne"> 
+            <div class="express">
+            <h2><?php echo $row ['waterAmount']; ?></h2>
+            <h4><?php echo $row ['riceMilkWater']; ?></h4>
+            <h4><?php echo $row ['soyMilkWater']; ?></h4>
+            <h4><?php echo $row ['oatMilkWater']; ?></h4>
+            <h4><?php echo $row ['almondMilkWater']; ?></h4>
+        
+                </div>
+        <div class="cowimage">
+            <img src="Koetjes-02.png" style="width: 200px;">
+            </div>
+            <div class="hide">Say what?!</div>
+            
+        </div>
+        
+        
+        <div class="blockThree">
+            <div class="express">
+            <h2><?php echo $row ['co2']; ?></h2>
+            <h4><?php echo $row ['riceMilk']; ?></h4>
+            <h4><?php echo $row ['Oatmilk']; ?></h4>
+            <h4><?php echo $row ['AlmondMilk']; ?></h4>
+            <h4><?php echo $row ['soyMilk']; ?></h4>
+           
+                </div>
+            <div class="cowimage"><img src="Koetjes-02.png" style="width: 200px;"></div>
+            <div class="hide">Oh wow!</div>
+            
+        </div>
+        
+        <div class="blockfour">
+            <div class="express">
+            <h2><?php echo $row ['grondAmount']; ?></h2>
+            <h4><?php echo $row ['riceMilkGrond']; ?></h4>
+            <h4><?php echo $row ['oatMilkGrond']; ?></h4>
+            <h4><?php echo $row ['almondMilkGrond']; ?></h4>
+            <h4><?php echo $row ['soyMilkGrond']; ?></h4>
+            
                 </div>
             <div class="cowimage">
                 <img src="Koetjes-03.png" style="width: 200px;">
@@ -254,7 +316,30 @@ function closeAllSelect(elmnt) {
 /*if the user clicks anywhere outside the select box,
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
+
+    
+/*Button hide show:*/    
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function myFunctionTwo() {
+  var x = document.getElementById("myDIVTwo");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}   
+    
 </script>
+
+
 
 </body>
 </html>
